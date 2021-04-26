@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    //TextView untuk judul
+    <TextView
+        android:id="@+id/TV_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple Calculator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"/>
+
+    //EditText untuk memasukkan bilangan pertama
+    <EditText
+        android:id="@+id/ET_angka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bilangan 1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    //EditText untuk memasukkan bilangan kedua
+    <EditText
+        android:id="@+id/ET_angka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bilangan 2"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    //Button untuk menghitung akar
+    <Button
+        android:id="@+id/BTN_akar"
+        android:text="akar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    //Button untuk menghitung pangkat
+    <Button
+        android:id="@+id/BTN_pangkat"
+        android:text="pangkat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    //Button untuk menghitung faktorial
+    <Button
+        android:id="@+id/BTN_faktorial"
+        android:text="faktorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    //Button untuk menghitung persen
+    <Button
+        android:id="@+id/BTN_persen"
+        android:text="persen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    //TextView untuk menampilkan hasil perhitungan
+    <TextView
+        android:id="@+id/TV_hasil"
+        android:text="0.0"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
